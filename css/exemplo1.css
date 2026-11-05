@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f172a;
+}
+
+.botao{
+    padding: 14px 30px;
+    border: none;
+    border-radius: 999px ;
+    background-color: #00cc8f;
+    color: #0f172a;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+/* linha magica do exemplo:
+diga propriedade transicionam , tempo e a curva. */
+transition: transform 0.3s ease,/* movimento (ease-suave) */ 
+box-shadow 0.3s ease; /* brilho acompanhando */
+}
+
+.botao:hover{
+    transform: translateY(-4px); 
+    /* negativo = sobre 4 pixels */
+box-shadow: 0 10px 22px rgba(0, 204, 143, 0.45);
+}
+
